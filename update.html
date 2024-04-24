@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icon.ico" type="image/x-icon" sizes="32x32">
+    <title>Version 2 Update Highlights</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            /* Light gray background */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: #fff;
+            /* White header background */
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .navbar-logo img {
+            width: 350px;
+            height: auto
+        }
+
+        .navigation {
+            margin-top: 20px;
+        }
+
+        .navigation a {
+            color: #00ccff;
+            /* Google blue */
+            font-size: 16px;
+            font-weight: 800;
+            text-decoration: none;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+
+        .navigation a:hover {
+            color: #000000;
+            /* Darker blue on hover */
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .update-container {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .update-container:hover {
+            transform: translateY(-5px);
+            /* Add a slight hover effect */
+        }
+
+        .update-item {
+            margin-bottom: 20px;
+        }
+
+        .update-item h2 {
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .update-item h2::after {
+            content: '\25BC';
+            /* Downward arrow icon */
+            margin-left: 5px;
+        }
+
+        .update-item p {
+            font-size: 16px;
+            color: #666;
+            display: none;
+        }
+
+        /* Responsive CSS */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 0;
+            }
+
+            .navbar-logo img {
+                width: 120px;
+            }
+
+            .navigation a {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            h3 {
+                font-size: 16px;
+            }
+
+            .update-container {
+                padding: 15px;
+            }
+
+            .update-item h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-logo">
+            <a href="index.html"><img src="image/logo.png" alt="Logo" /></a>
+        </div>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="login.php">Login</a>
+            <a href="signup.php">Signup</a>
+            <a href="term.html">T&C</a>
+        </div>
+    </header>
+    <h1>Version 2 Update Highlights</h1>
+    <h3>Click on the topics to know more details.</h3>
+
+    <div class="update-container">
+        <div class="update-item">
+            <h2 onclick="toggleVisibility(this)">Enhanced UI Design</h2>
+            <p>The UI has received a significant facelift, featuring a new and improved Pages for a more
+                user-friendly experience.</p>
+        </div>
+    </div>
+
+    <div class="update-container">
+        <div class="update-item">
+            <h2 onclick="toggleVisibility(this)">Seamless Cloud-Based Data Storage</h2>
+            <p>Say goodbye to data loss! We've upgraded to Seamless Cloud-Based Data Storage, ensuring your data stays
+                secure and accessible after resolving issues caused by drive crashes in our previous version.</p>
+        </div>
+    </div>
+
+    <div class="update-container">
+        <div class="update-item">
+            <h2 onclick="toggleVisibility(this)">Advanced Security</h2>
+            <p>We've taken security to the next level by introducing 2-factor authentication. Your account is now
+                even more secure.</p>
+        </div>
+    </div>
+
+    <div class="update-container">
+        <div class="update-item">
+            <h2 onclick="toggleVisibility(this)">Password Management</h2>
+            <p>Changing your password is now easier than ever, ensuring you have complete control over your account
+                security.</p>
+        </div>
+    </div>
+
+    <div class="update-container">
+        <div class="update-item">
+            <h2 onclick="toggleVisibility(this)">Points System</h2>
+            <p>Introducing a points system that allows users to earn points by Transactions and Watching ads,
+                offering more ways to engage with our platform.</p>
+        </div>
+    </div>
+
+    <div class="update-container">
+        <div class="update-item">
+            <h2 onclick="toggleVisibility(this)">Transaction Transparency</h2>
+            <p>Get a detailed view of all your Transactions with our new Transaction history feature.</p>
+        </div>
+    </div>
+
+    <div class="update-container">
+        <div class="update-item">
+            <h2 onclick="toggleVisibility(this)">Universal Access</h2>
+            <p>Access our platform from anywhere, providing you with the flexibility to connect whenever
+                and
+                wherever you need it.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleVisibility(element) {
+            var paragraph = element.nextElementSibling;
+            if (paragraph.style.display === 'block') {
+                paragraph.style.display = 'none';
+            } else {
+                paragraph.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
+</html>

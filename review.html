@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/icon.ico" type="image/x-icon" sizes="32x32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <title>Write Review</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            /* width: 440px; */
+            /* height: 722px; */
+            height: 100%;
+            left: 0%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            background: url(image/bg11.jpeg);
+            background-size: cover;
+            background-position: center;
+            overflow: hidden;
+        }
+
+        header {
+            position: relative;
+            top: 0;
+            width: 100%;
+            height: 76px;
+            padding: 30px 100px;
+            display: flex;
+            border-radius: 2px 2px 16px 16px;
+            background: #D9D9D9;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .navbar-logo img {
+            position: absolute;
+            top: 2%;
+            left: 2%;
+            width: 270px;
+            height: 70px;
+            z-index: 1;
+        }
+
+        .head {
+            position: absolute;
+            top: 2%;
+            left: 0%;
+            width: 100%;
+            /* height: 177px; */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #000;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 10px 10px;
+            margin-top: 50px;
+        }
+
+        form {
+            width: 90%;
+            max-height: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: transparent;
+            border: 1px solid #ccc;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            width: 100%;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        select::after {
+            content: '\25BC';
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            font-size: 18px;
+            color: #555;
+        }
+
+        select:hover {
+            border-color: #999;
+        }
+
+        select:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        .rating {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .rating input[type="radio"] {
+            display: none;
+        }
+
+        .rating label {
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            background-image: url('star.png');
+            /* Replace 'star.png' with your star image */
+            background-size: cover;
+        }
+
+        .rating input[type="radio"]:checked+label {
+            background-image: url('filled-star.png');
+            /* Replace 'filled-star.png' with your filled star image */
+        }
+
+        a {
+            width: 120px;
+            background-color: #4caf50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            text-align: center;
+            align-items: center;
+            margin-top: 80px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <div class="navbar-logo">
+                <img src="image/logo.png" alt="logo">
+            </div>
+        </header>
+        <h1>Write a Review or Any Suggestions of the Service.</h1>
+        <form method="POST" action="process_review.php">
+            <!-- Your form fields go here -->
+            <label for="rating">Write Review:</label>
+            <textarea id="review_text" name="review_text" rows="6" required></textarea>
+            <label for="rating">Rating:</label>
+            <div class="rating">
+                <input type="radio" id="star5" name="rating" value="1">
+                <label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="2">
+                <label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="4">
+                <label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="5">
+                <label for="star1"></label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <a href="profile.php">Home</a>
+    </section>
+</body>
+
+</html>
