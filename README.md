@@ -2,6 +2,8 @@
 
 Welcome to Chai Junction CRM, a web application that allows customers to earn and redeem points for purchases made at Chai Junction Cafe.
 
+To visit click on the link -[Chai Junction Cafe](https://chaijunctioncafe.000webhostapp.com)
+
 ## Purpose
 
 The purpose of this project is to provide a loyalty program for customers, where they can earn points on their purchases and redeem these points for discounts or free items within Chai Junction Cafe.
