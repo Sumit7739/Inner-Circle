@@ -2,7 +2,10 @@
 
 Welcome to Inner Circle CRM, a Customer Loyality CRM (Customer Relationship Management) web application that allows customers to earn and redeem points for purchases made at Chai Junction Cafe and other participating merchants.
 
-To visit click on the link -[Inner Circle](https://chaijunctioncafe.000webhostapp.com)
+To visit click on the link -[ChaiJunction Cafe (Inner Circle Demo)](https://chaijunctioncafe.000webhostapp.com)
+
+-- username: srisumit4@gmail.com
+-- password: 11111111
 
 ## Purpose
 
