@@ -4,7 +4,7 @@ Welcome to Inner Circle CRM, a Customer Loyality CRM (Customer Relationship Mana
 
 To visit click on the link -[ChaiJunction Cafe (Inner Circle Demo)](https://chaijunctioncafe.000webhostapp.com)
 
--- username: srisumit4@gmail.com
+-- username: srisumit4@gmail.com <br>
 -- password: 11111111
 
 ## Purpose
@@ -12,11 +12,11 @@ To visit click on the link -[ChaiJunction Cafe (Inner Circle Demo)](https://chai
 The purpose of this project is to provide a loyalty program for customers, where they can earn points on their purchases and redeem these points for discounts or free items within Inner Circle Cafe.
 
 ## Technologies Used
--- HTML
--- CSS
--- JavaScript
--- PHP
--- MySQL
+-- HTML <br>
+-- CSS <br>
+-- JavaScript <br>
+-- PHP <br>
+-- MySQL <br>
 -- Various JavaScript libraries for enhanced performance and styling
 
 ## Usage
