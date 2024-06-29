@@ -4,9 +4,6 @@ Welcome to Inner Circle CRM, a Customer Loyality CRM (Customer Relationship Mana
 
 To visit click on the link -[ChaiJunction Cafe (Inner Circle Demo)](https://chaijunctioncafe.000webhostapp.com)
 
--- username: srisumit4@gmail.com <br>
--- password: 11111111
-
 ## Purpose
 
 The purpose of this project is to provide a loyalty program for customers, where they can earn points on their purchases and redeem these points for discounts or free items within Inner Circle Cafe.
